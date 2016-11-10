@@ -1,0 +1,61 @@
+/* EasyUp */
+.easyup--upload {
+  border: 2px dashed #AAA;
+  color: #AAA; }
+  .easyup--upload label {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+    text-align: center;
+    font-weight: normal; }
+    .easyup--upload label > img {
+      width: 100px;
+      height: auto;
+      display: flex;
+      margin: 0 auto 20px; }
+      .easyup--upload label > img path {
+        fill: red; }
+    .easyup--upload label > span {
+      font-size: 20px; }
+      .easyup--upload label > span > strong {
+        color: #666; }
+  .easyup--upload input[type=file] {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0; }
+  .easyup--upload.is-dragover {
+    border-color: green;
+    color: green; }
+.easyup--files > .table {
+  margin-bottom: 0; }
+  .easyup--files > .table > tbody > tr > td,
+  .easyup--files > .table > tbody > tr > th {
+    vertical-align: middle; }
+  .easyup--files > .table .file-info .glyphicon {
+    float: right;
+    font-size: 18px; }
+  .easyup--files > .table .file-info .glyphicon-refresh {
+    animation: spinner 0.8s infinite linear; }
+  .easyup--files > .table .file-info .progress {
+    height: 10px;
+    margin-top: 15px;
+    margin-bottom: 0; }
+
+/*  . Animation -------------------------- */
+@keyframes spinner {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+/*# sourceMappingURL=easyup.css.map */

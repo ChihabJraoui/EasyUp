@@ -1,0 +1,87 @@
+
+/* EasyUp */
+
+.easyup
+
+	&--upload
+		border: 2px dashed #AAA
+		color: #AAA
+
+		label
+			display: block
+			cursor: pointer
+			padding: 20px
+			text-align: center
+			font-weight: normal
+
+			> img
+				width: 100px
+				height: auto
+				display: flex
+				margin: 0 auto 20px
+
+				path
+					fill: red
+
+
+			> span
+				font-size: 20px
+
+				> strong
+					color: #666
+
+		input[type=file]
+			position: absolute
+			z-index: -1
+			top: 0
+			left: 0
+			opacity: 0
+
+		&.is-dragover
+			border-color: green
+			color: green
+
+	&--files
+
+		> .table
+			margin-bottom: 0
+
+			> tbody > tr > td,
+			> tbody > tr > th
+				vertical-align: middle
+
+			.file-info
+
+				.glyphicon
+					float: right
+					font-size: 18px
+
+				.glyphicon-refresh
+					animation: spinner 0.8s infinite linear
+
+				.progress
+					height: 10px
+					margin-top: 15px
+					margin-bottom: 0
+
+
+
+
+
+
+/*  . Animation --------------------------
+
+@keyframes spinner
+	from
+		-webkit-transform: rotate(0deg)
+		-moz-transform: rotate(0deg)
+		-ms-transform: rotate(0deg)
+		-o-transform: rotate(0deg)
+		transform: rotate(0deg)
+
+	to
+		-webkit-transform: rotate(360deg)
+		-moz-transform: rotate(360deg)
+		-ms-transform: rotate(360deg)
+		-o-transform: rotate(360deg)
+		transform: rotate(360deg)
